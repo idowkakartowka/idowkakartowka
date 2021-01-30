@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/* css*/
+
+body{
+  margin:0;
+  padding:0;
+  font-family: Quicksand;
+  background-color: #fceef5;
+
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fdcfdf;
+}
+.logo img{
+  height:40px;
+}
+nav ul{
+  display: flex;
+}
+nav ul li a{
+  height: 30px;
+  line-height: 30px;
+  margin: 3px;
+  padding: 0 20px;
+  display: flex;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  color: #e05297;
+  letter-spacing: 0;
+}
+.home{
+  color: #222831;
+  font-size: 1.5rem;
+}
+nav ul li a:hover{
+  background-color: #f3bad6;
+  color: #222831;
+  transition: all ease 0.5s;
+}
+.photo img{
+  width: 400px;
+  height: 400px;
+}
+.photo{
+  width: 400px;
+  height: 300px;
+}
+.content{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top:45%;
+  transform: translate(-50%, -50%);
+}
+.main-text{
+  width: 500px;
+}
+.main-text h1{
+  font-size: 3rem;
+  color: #e05297;
+  margin: 60px 0 10px 0;
+  line-height: 60px;
+}
+.main-text p{
+  color: #222831;
+  font-size: 1.3rem;
+}
+.portfolio-btn,
+.f-box a{
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222831;
+  background-color: #f3bad6;
+  border-radius: 20px;
+}
+.portfolio-btn: hover,
+.f-box a: hover{
+  background-color: #222831;
+  color: #f3bad6;
+  transition: all ease 0.2s;
+}
+#hobbies{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 900px;
+  margin: 750px auto 75px auto;
+}
+.hobbies-text,
+.info-text{
+  width: 400px;
+}
+.hobbies-img,
+.info-img{
+  width: 350px;
+  height: 550px;
+}
+.hobbies-img img,
+.info-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hobbies-heading span,
+.favorites-heading span,
+#contact span,
+.info-heading span{
+  color: #e05297;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+.hobbies-box-container{
+  margin-top:30px;
+}
+.hobbies-box{
+  display: flex;
+  margin: 20px 15px;
+}
+.hobbies-box-text strong,
+.favorites-heading h3,
+.info-box-text strong{
+  color:#222831;
+  margin: 10px;
+  font-size: 1.3rem;
+}
+.hobbies-box-text p,
+.info-box-text p{
+  color:#222831;
+  font-size: 1.2rem;
+}
+
+#favorites{
+  width: 100%;
+  border-top: 4px;
+  border-bottom: 4px;
+  padding: 50px 0;
+}
+.favorites-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.f-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2px 0;
+}
+.f-box{
+  width: 310px;
+  height: 350px;
+  background-color: #222831;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px;
+}
+.f-box img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.f-box strong {
+  color: #fdcfdf;
+  margin: 0px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.f-box a{
+  width: 140px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.f-box: hover{
+  transform: translateY(-10px);
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+  transition: all ease 0.2s;
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+#contact img{
+  height: 600px;
+  margin: 10px;
+}
+.contact-input label{
+  color: #e05297;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-input input{
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  width: 200px;
+  height: 35px;
+  background-color: transparent;
+  outline: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10px;
+  border-radius: 20px;
+}
+
+#info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 900px;
+  margin: 350px auto 75px auto;
+}
+.info-heading,
+.info-box{
+  width: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
